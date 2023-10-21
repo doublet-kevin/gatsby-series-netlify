@@ -20,7 +20,7 @@ const Layout: FunctionComponent<LayoutProps> = ({children}) => {
             <header className="h-[70px] bg-theme-01 text-theme-02 px-2">
                 <div className="flex items-center gap-6 justify-between max-w-7xl m-auto h-full">
                     <div className="relative inline-flex gap-2">
-                        <button onClick={toggleMobileNav}>
+                        <button onClick={toggleMobileNav} className="inline md:hidden">
                             <ToggleMobileNav isOpen={mobileNavIsOpen} />
                         </button>
                         <GatsbyLink to="/" className="flex-shrink-0">
