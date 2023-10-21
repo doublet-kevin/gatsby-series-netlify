@@ -1,12 +1,16 @@
-import React, { FunctionComponent } from "react"
-import type { HeadFC } from "gatsby"
+import React, {FunctionComponent} from "react"
+import type {HeadFC} from "gatsby"
+
+import Layout from "../components/Layout";
 
 const IndexPage: FunctionComponent = () => {
-  return (
-    <main>
-      Home
-    </main>
-  )
+    return (
+        <Layout>
+            <main>
+                Home
+            </main>
+        </Layout>
+    )
 }
 
 export default IndexPage
